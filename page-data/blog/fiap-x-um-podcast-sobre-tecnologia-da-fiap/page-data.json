@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-markdown-remark-frontmatter-slug-tsx",
+    "path": "/blog/fiap-x-um-podcast-sobre-tecnologia-da-fiap/",
+    "result": {"data":{"markdownRemark":{"html":"<p>Recentemente descobri um podcast patrocinado pela <a href=\"http://www.fiap.com.br/conheca-a-fiap/quem-somos/\" target=\"_blank\" rel=\"noopener\">FIAP</a> interessante com alguns drops sobre tecnologia. São temas bem atuais e o podcast é relativamente novo. Quem quiser dar uma conferida, é só clicar na imagem abaixo:</p>\n<img class=\"alignnone size-full wp-image-1011\" src=\"/images/posts/2018/09/fiapx.png\" alt=\"logo do podcast fiap café\" width=\"700\" height=\"228\" />","frontmatter":{"date":"April 21, 2015","slug":"/fiap-x-um-podcast-sobre-tecnologia-da-fiap/","title":"FIAP X - um podcast sobre tecnologia da FIAP"}}},"pageContext":{"id":"9c07ec3a-5e85-546b-9142-501edd2ca331","frontmatter__slug":"/fiap-x-um-podcast-sobre-tecnologia-da-fiap/","__params":{"frontmatter__slug":"fiap-x-um-podcast-sobre-tecnologia-da-fiap"}}},
+    "staticQueryHashes": []}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-markdown-remark-frontmatter-slug-tsx",
+    "path": "/blog/universidade-lanca-colecao-de-livros-digitais-para-download-gratuito/",
+    "result": {"data":{"markdownRemark":{"html":"<p>Para ter acesso ao conteúdo, basta cadastrar-se e efetuar o download. O site conta também com livros pagos.\n<a href=\"http://culturaacademica.com.br\">http://culturaacademica.com.br</a>\nDica do <a href=\"https://canaldoensino.com.br/blog/\">@CanaldoEnsino</a></p>","frontmatter":{"date":"March 23, 2014","slug":"/universidade-lanca-colecao-de-livros-digitais-para-download-gratuito/","title":"Universidade lança coleção de livros digitais para download gratuito"}}},"pageContext":{"id":"e8f67661-6247-5e79-929a-319f2cef1ef2","frontmatter__slug":"/universidade-lanca-colecao-de-livros-digitais-para-download-gratuito/","__params":{"frontmatter__slug":"universidade-lanca-colecao-de-livros-digitais-para-download-gratuito"}}},
+    "staticQueryHashes": []}

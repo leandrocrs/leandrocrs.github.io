@@ -1,0 +1,149 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.1937b61a87984d91920d.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;color:#657b83;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642}pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1}.token.punctuation{color:#586e75}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198}.token.entity{background:#eee8d5;color:#657b83}.token.atrule,.token.attr-value,.token.keyword{color:#859900}.token.class-name,.token.function{color:#b58900}.token.important,.token.regex,.token.variable{color:#cb4b16}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 4.2.0"/><style data-styled="" data-styled-version="5.3.3">.iejAIp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;border:0.5rem dashed #2F5061;border-left-width:0;border-right-width:0;margin-bottom:1rem;border-style:double;}/*!sc*/
+.iejAIp ul{list-style:none;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;margin-block-start:0;margin-block-end:0;margin-inline-start:0px;margin-inline-end:0px;padding-inline-start:0px;}/*!sc*/
+.iejAIp li{padding:0.5rem 1rem;}/*!sc*/
+.iejAIp a{-webkit-text-decoration:none;text-decoration:none;font-weight:bold;}/*!sc*/
+data-styled.g1[id="site-menu__StyledMenu-sc-fpsf2q-0"]{content:"iejAIp,"}/*!sc*/
+.kgExyt{-webkit-animation:bZnZc 1.5s ease-in-out infinite;animation:bZnZc 1.5s ease-in-out infinite;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+data-styled.g2[id="global__BlinkCursor-sc-1h8yngu-0"]{content:"kgExyt,"}/*!sc*/
+.kqTWXg{font-family:sans-serif;min-width:300px;max-width:600px;margin:50px auto;}/*!sc*/
+.kqTWXg a{color:#2F5061;}/*!sc*/
+.kqTWXg a:hover{color:#E57F84;}/*!sc*/
+.kqTWXg p{line-height:1.75;}/*!sc*/
+.kqTWXg ul li{line-height:1.75;}/*!sc*/
+.kqTWXg h1{color:#2F5061;}/*!sc*/
+data-styled.g3[id="global__StyledApp-sc-1h8yngu-1"]{content:"kqTWXg,"}/*!sc*/
+@-webkit-keyframes bZnZc{0%{opacity:0%;}50%{opacity:100%;}100%{opacity:0%;}}/*!sc*/
+@keyframes bZnZc{0%{opacity:0%;}50%{opacity:100%;}100%{opacity:0%;}}/*!sc*/
+data-styled.g4[id="sc-keyframes-bZnZc"]{content:"bZnZc,"}/*!sc*/
+</style><title data-react-helmet="true">Speedup WSL by disabling Windows Real-time protection</title><link data-react-helmet="true" rel="canonical" href="https://leandrocrs.me/"/><meta data-react-helmet="true" charSet="utf-8"/><meta data-react-helmet="true" name="theme-color" content="#2F5061"/><script data-react-helmet="true" type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Leandro Cavalcante","alternateName":"leandrocrs","alumniOf":{"@type":"CollegeOrUniversity","name":["Faculdade de Tecnologia da Zona Leste","Escola Técnica de Guaianases"]},"image":"https://leandrocrs.me/cover.jpg","sameAs":["https://github.com/leandrocrs","https://medium.com/@leandrocrs","https://dev.to/leandrocr","https://www.linkedin.com/in/leandrocrs/"],"address":"São Paulo - Brazil","description":"Desenvolvedor Frontend em São Paulo, Brasil","url":"https://leandrocrs.me","knowsAbout":["Frontend Web Development","React","Angular","Typescript","Javascript","HTML","CSS"]}</script><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="icon" href="/favicon-32x32.png?v=0e634eda5a0889b3d4223289db7dc350" type="image/png"/><link rel="icon" href="/favicon.svg?v=0e634eda5a0889b3d4223289db7dc350" type="image/svg+xml"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=0e634eda5a0889b3d4223289db7dc350"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=0e634eda5a0889b3d4223289db7dc350"/><link as="script" rel="preload" href="/webpack-runtime-a9f551d0d77a590666b3.js"/><link as="script" rel="preload" href="/framework-9560e623da6baf546c64.js"/><link as="script" rel="preload" href="/app-93a423aae94535ee0a7f.js"/><link as="fetch" rel="preload" href="/page-data/blog/speedup-wsl-by-disabling-windows-real-time-protection/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global__StyledApp-sc-1h8yngu-1 kqTWXg"><header><h1>Olá, sou o Leandro Cavalcante! <span aria-hidden="true" class="global__BlinkCursor-sc-1h8yngu-0 kgExyt">_</span></h1></header><nav class="site-menu__StyledMenu-sc-fpsf2q-0 iejAIp"><ul><li><a href="/">Início</a></li><li><a href="/blog">Blog</a></li><li><a href="https://github.com/leandrocrs/" target="_blank" rel="noreferrer">GitHub</a></li><li><a href="https://www.linkedin.com/in/leandrocrs/" target="_blank" rel="noreferrer">LinkedIn</a></li></ul></nav><main><div class="blog-post-container"><article class="blog-post"><h1>Speedup WSL by disabling Windows Real-time protection</h1><h2>August 30, 2018</h2><div class="blog-post-content"><p>In this short tutorial, I will help you speedup Windows Subsystem for Linux (WSL) by disabling Windows Real-time protection.</p>
+<p>While being helpful detecting some common Windows malwares, in GNU/Linux side it’s so inefficient and actually unhelpful.</p>
+<p>Every time you try to access/read/write some file/folder, Windows Defender intercept WSL requisition for antivirus scanning, slowing down things until you hate everything in WSL!</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7de272fd89dd13c37d768152cac81329/d9199/1-6FyyUhdUkfW77MDfC1BgUA.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQoz21RiXKCMBDFelsVlMPrC6pW8CAJOSBAAvr/P9TZUJnadubNzs4k7+2+fZabKJcqj+mAa4+qdVr7XLtU+VwvSWnj3Mb5+CJ6YdI5YuuAXuBRZaBXvPKZWovaZ9oHrQp6rleispGcI/kP2aXKTUqfwSePqV12D0TlM70W1UrUAa+22X0lapDA0trHL+R21DIpl0k5R3J05sMzG184NBFr6iCi/ZD+nrzNHpu03mWPBSner2n3k1gfN3jYxz+ADOI/ns3Cm/Q+Q3JyFeOL6Ie0QfeUDEI6iFjvlHwzW7mGvCRg2BymdnDeeBtGbHwRBmDBGIHlW3SOhuwzSMhjquXP4bZQF6SY3tLOEXcOCOqzeWvP7lHl0vIZj/YYZA69qAIITzukgKhiaWNpo3xyS2dxNogYSDQ5m6hqj6mAV3MkHZwvSGFQOrhwSD6LM4fk01s2OnOH5KMzn1zFF73rYrEpb65wAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu running inside WSL trying to update some packages behind Windows Real-time protection bad guy"
+        title="Ubuntu running inside WSL trying to update some packages behind Windows Real-time protection bad guy"
+        src="/static/7de272fd89dd13c37d768152cac81329/fcda8/1-6FyyUhdUkfW77MDfC1BgUA.png"
+        srcset="/static/7de272fd89dd13c37d768152cac81329/12f09/1-6FyyUhdUkfW77MDfC1BgUA.png 148w,
+/static/7de272fd89dd13c37d768152cac81329/e4a3f/1-6FyyUhdUkfW77MDfC1BgUA.png 295w,
+/static/7de272fd89dd13c37d768152cac81329/fcda8/1-6FyyUhdUkfW77MDfC1BgUA.png 590w,
+/static/7de272fd89dd13c37d768152cac81329/efc66/1-6FyyUhdUkfW77MDfC1BgUA.png 885w,
+/static/7de272fd89dd13c37d768152cac81329/d9199/1-6FyyUhdUkfW77MDfC1BgUA.png 960w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Ubuntu running inside WSL trying to update some packages behind Windows Real-time protection bad guy</figcaption>
+  </figure></p>
+<p><strong>*Warning</strong>: disabling Real-time Security may have some direct impact in yours personal security*. Know what you are doing.</p>
+<!--more-->
+<h1>Adding WSL in the Windows Security's Exclusion List</h1>
+<p>So, first get the UbuntuOnLinux (or your distro of choice) installation path going to <code class="language-text">%USERPROFILE%\AppData\Local\Packages</code> and lookup for something like <code class="language-text">CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc</code>.</p>
+<p>Copy the entire path from <em>Explorer.exe</em> address bar, then go to:</p>
+<p>Settings > Update &#x26; Security > Windows Defender > Open Windows Defender Secutiry Central > Protection Against Viruses &#x26; Threats > Advanced Config… > Exclusions > Add or Remove > Add > Folder and finally: paste the previous copied path.</p>
+<h1>High security sometimes means Low performance</h1>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9f1e9d48b1c19b0dc2270639aff56367/ac42d/1-Cb8wWHPg6h_bgN8P7cnULg.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7khk2FbiVC//xAAYEAACAwAAAAAAAAAAAAAAAAABEAIRQv/aAAgBAQABBQJTJt6X/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFhAAAwAAAAAAAAAAAAAAAAAAADAx/9oACAEBAAY/Aio//8QAGhAAAwADAQAAAAAAAAAAAAAAAAERECFRQf/aAAgBAQABPyFzswQSPwcu2a6MW4fCIZ//2gAMAwEAAgADAAAAENAA/P/EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAEDAQE/ECH/xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPxAp/8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAIVExccHh/9oACAEBAAE/ELAwpkRXzAMdY7MQGGQOH4nMLITUEATY7iOAJU1P/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot of Windows Defender Security Center showing Real-time protection as disabled"
+        title="Screenshot of Windows Defender Security Center showing Real-time protection as disabled"
+        src="/static/9f1e9d48b1c19b0dc2270639aff56367/1c72d/1-Cb8wWHPg6h_bgN8P7cnULg.jpg"
+        srcset="/static/9f1e9d48b1c19b0dc2270639aff56367/a80bd/1-Cb8wWHPg6h_bgN8P7cnULg.jpg 148w,
+/static/9f1e9d48b1c19b0dc2270639aff56367/1c91a/1-Cb8wWHPg6h_bgN8P7cnULg.jpg 295w,
+/static/9f1e9d48b1c19b0dc2270639aff56367/1c72d/1-Cb8wWHPg6h_bgN8P7cnULg.jpg 590w,
+/static/9f1e9d48b1c19b0dc2270639aff56367/ac42d/1-Cb8wWHPg6h_bgN8P7cnULg.jpg 618w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Screenshot of Windows Defender Security Center showing Real-time protection as disabled</figcaption>
+  </figure></p>
+<p>Adding WSL to exclusion list may speedup things a little bit, but not so. There is one more thing bringing your performance down: Window Defender real-time protection.</p>
+<p>As noticed by <a href="https://github.com/tanseydavid">David Tansey</a> in this <a href="https://github.com/Microsoft/WSL/issues/1932">WSL issue</a>, real-time protection have a HUGE impact in developer tools like Visual Studio build tool and tools like Kubernetes and etc., including WSL.</p>
+<p>We will disable it, but be aware: you will may be more vulnerable for some common attacks through malicious script execution.</p>
+<p>So, let’s disable:</p>
+<h2>Using Group Policy (gpedit.exe) to disable real-time protection:</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cd6e3998e77714458e7c12fdf3a34d80/5a190/1-a-U4iD2KwHC3VXFuNDhTxg.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVQoz5WQ3Y6bMBCFef83WTVNNgnZVqoqVb2puqrUrsLG/CyODcYxYDCGAAmOcUVy0VZVq/bTuRjNzJkZjXU3X9zNV6/uVwt7M19tZkt7ttzM1w9L++F+vbnKnmRP8S05W9qvV1OPJUsaxcmxaYwZfUQet/CbF3mkcGLppR04XEWPTlztaPuExZbUrOrL5lTUJ+tYHcLA5UXR9x2KYspldxpeEr74FLz5ihef4Vsnf+8W60f4ER7f7bIPL3XVa2PMaIw19ALtva4/X5TCCGUpqyqRpykKfRwGOPQTBMucEQzHUbdNrbUejRnHSVbf5NunL7wolVIYY9/3CSHswIDrAc93/QB4fhTFIdwP6lJJqS7T2hvWqS3DAERRLISAEAIAKKW1rAlJCKExSRJKOS/YgWmtu7bV+iezyPaO4wAAOOcIIc/zCCFKqal4O+7PWJJHz8+7sizPwxlCGAQBpXT8q+eHucwxAG6W5UVRIITyPBdCTF/5jespvwy1DpHLWDoM57Ztu64z/4MFQ5eladf3ddNk6YSUsvk3vgNvd1pZMg3FJwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot of Group Policy Editor (a.k.a. gpedit.msc)"
+        title="Screenshot of Group Policy Editor (a.k.a. gpedit.msc)"
+        src="/static/cd6e3998e77714458e7c12fdf3a34d80/fcda8/1-a-U4iD2KwHC3VXFuNDhTxg.png"
+        srcset="/static/cd6e3998e77714458e7c12fdf3a34d80/12f09/1-a-U4iD2KwHC3VXFuNDhTxg.png 148w,
+/static/cd6e3998e77714458e7c12fdf3a34d80/e4a3f/1-a-U4iD2KwHC3VXFuNDhTxg.png 295w,
+/static/cd6e3998e77714458e7c12fdf3a34d80/fcda8/1-a-U4iD2KwHC3VXFuNDhTxg.png 590w,
+/static/cd6e3998e77714458e7c12fdf3a34d80/5a190/1-a-U4iD2KwHC3VXFuNDhTxg.png 800w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Screenshot of Group Policy Editor (a.k.a. gpedit.msc)</figcaption>
+  </figure></p>
+<ol>
+<li>On your Group Policy management machine, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click Edit.</li>
+<li>In the Group Policy Management Editor go to Computer configuration.</li>
+<li>Click Policies then Administrative templates.</li>
+<li>Expand the tree to Windows components > Windows Defender Antivirus > Real-time protection.</li>
+<li>Double-click the Turn off real-time protection setting and set the option to Enabled. Click OK.</li>
+</ol>
+<p>I’ve only tested superficially, but I can ensure a great performance speed up.</p>
+<blockquote>
+<p>Disclaimer: I have plans to improve my English skill, but my willing to help is bigger than that.</p>
+</blockquote>
+<h1>References:</h1>
+<p>Configure always-on real-time protection in Windows Defender AV | Microsoft Docs  —  <a href="https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus">https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus</a></p>
+<p>First posted on Medium <a href="https://medium.com/@leandrw/speeding-up-wsl-i-o-up-than-5x-fast-saving-a-lot-of-battery-life-cpu-usage-c3537dd03c74">Speeding up WSL I/O up than 5x fast + saving a lot of battery life &#x26; CPU usage</a>, as a reply to <a href="https://medium.com/@johnwoodruff91/epic-dev-environment-with-wsl-dc81e234ae61">Epic Development Environment using Windows Subsystem for Linux</a></p></div></article></div></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/speedup-wsl-by-disabling-windows-real-time-protection/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-348c6a63efdaa905b8fe.js"],"app":["/app-93a423aae94535ee0a7f.js"]};/*]]>*/</script><script src="/polyfill-348c6a63efdaa905b8fe.js" nomodule=""></script><script src="/app-93a423aae94535ee0a7f.js" async=""></script><script src="/framework-9560e623da6baf546c64.js" async=""></script><script src="/webpack-runtime-a9f551d0d77a590666b3.js" async=""></script></body></html>

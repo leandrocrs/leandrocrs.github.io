@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-markdown-remark-frontmatter-slug-tsx",
+    "path": "/blog/windows-command-line-tip-easily-change-window-transparency/",
+    "result": {"data":{"markdownRemark":{"html":"<img class=\"alignnone size-full wp-image-789\" src=\"/images/posts/2017/10/1-VC-J-0V3pZj6m2L4HwyvMQ.gif\" alt=\"\" width=\"697\" height=\"417\">\n<p><em>Smart tip:</em> when using Windows 10 command-line tools such as WSL, Ubuntu, Powershell or even CMD, you can:</p>\n<pre>CTRL + Shift + Scroll Up/Down = change window transparency level</pre>","frontmatter":{"date":"October 22, 2017","slug":"/windows-command-line-tip-easily-change-window-transparency/","title":"Windows command-line tip: Easily Change Window Transparency"}}},"pageContext":{"id":"9ddef84c-666c-5c48-9695-2e7acd87c560","frontmatter__slug":"/windows-command-line-tip-easily-change-window-transparency/","__params":{"frontmatter__slug":"windows-command-line-tip-easily-change-window-transparency"}}},
+    "staticQueryHashes": []}
