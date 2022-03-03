@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-blog-markdown-remark-frontmatter-slug-tsx",
-    "path": "/blog/tabela-de-salarios-de-profissoes-da-area-de-ti/",
-    "result": {"data":{"markdownRemark":{"html":"<p><a href=\"https://info.abril.com.br/carreira/salarios/\">Tabela de salários de profissões da área de TI</a></p>\n<p>Pesquisa realizada pela consultoria Desix no mês de março de 2012.</p>","frontmatter":{"date":"April 06, 2014","slug":"/tabela-de-salarios-de-profissoes-da-area-de-ti/","title":"Tabela de salários de profissões da área de TI"}}},"pageContext":{"id":"b0e64623-43ae-511c-9c05-102db61f9b41","frontmatter__slug":"/tabela-de-salarios-de-profissoes-da-area-de-ti/","__params":{"frontmatter__slug":"tabela-de-salarios-de-profissoes-da-area-de-ti"}}},
-    "staticQueryHashes": []}
